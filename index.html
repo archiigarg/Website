@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RHODE</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+  <header class="flex justify-between items-center py-4 px-4 bg-gray-800 text-white">
+    <h1 class="text-xl font-bold">RHODE</h1>
+    <nav class="flex space-x-4">
+      <a href="Home.html" class="text-base hover:text-gray-300">Home</a>
+      <a href="about.html" class="text-base hover:text-gray-300">About Us</a>
+      <a href="Shop.html" class="text-base hover:text-gray-300">Shop</a>
+      <a href="contact.html" class="text-base hover:text-gray-300">FAQ</a>
+      <a href="landing.html" class="text-base hover:text-gray-300">Special Offer</a>
+    </nav>
+  </header>
+  <main class="flex-grow">
+    <h1 class="text-3xl font-bold text-center py-8">OUR BEST SELLERS</h1>
+    <section class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="card rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-lg" onclick="redirectToDetail('card1.html')">
+          <img src="https://cdn.mos.cms.futurecdn.net/PeDZRaPBGF4xjb64fjpmJ6-320-80.png" alt="Card Image" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h2 class="text-xl font-bold mb-2">POCKET BLUSH</h2>
+            <p class="text-gray-600">A little blush for a little flush.</p>
+          </div>
+        </div>
+        <div class="card rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-lg" onclick="redirectToDetail('card2.html')">
+          <img src="https://i0.wp.com/internationalmakeup.in/wp-content/uploads/2023/09/Rhode-Peptide-Lip-Tint-Raspberry-Jelly.png?fit=640%2C640&ssl=1" alt="Card Image" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h2 class="text-xl font-bold mb-2">LIP TINT</h2>
+            <p class="text-gray-600">The tinted lip layer just for summer.</p>
+          </div>
+        </div>
+        <div class="card rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-lg" onclick="redirectToDetail('card3.html')">
+          <img src="https://i0.wp.com/internationalmakeup.in/wp-content/uploads/2023/03/Rhode-Barrier-Restore-Cream-2.jpg?fit=1024%C2%A01024&ssl=1" alt="Card Image" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h2 class="text-xl font-bold mb-2">BARRIER RESTORE CREAM</h2>
+            <p class="text-gray-700">A lightweight cream moisturizer.</p>
+          </div>
+        </div>
+        <div class="card rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-lg" onclick="redirectToDetail('card4.html')">
+          <img src="https://i.ebayimg.com/images/g/o~wAAOSwFhxl25ZY/s-l1600.jpg" alt="Card Image" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h2 class="text-xl font-bold mb-2">PHONE CASE</h2>
+            <p class="text-gray-700">A silicone case that keeps your lip tint on hand.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function redirectToDetail(url) {
+      window.location.href = url;
+    }
+  </script>
+
+  <footer class="bg-gray-800 text-white py-4 px-4 w-full mt-auto">
+    <div class="container mx-auto flex justify-between items-center">
+      <p class="text-sm">© 2024 RHODE</p>
+      <ul class="flex space-x-4">
+        <li><a href="privacy.html" class="hover:text-gray-300">Privacy Policy</a></li>
+        <li><a href="terms.html" class="hover:text-gray-300">Terms of Service</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
